@@ -1,0 +1,97 @@
+:root {
+  --blue: blue;
+  --indigo: #5E1084;
+  --purple: #6f42c1;
+  --pink: #6c757d;
+  --red: #fd397a;
+  --orange: #ffb822;
+  --yellow: #FFFA6F;
+  --green: #1dc9b7;
+  --teal: #20c997;
+  --cyan: #5578eb;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #313a46;
+  --primary: #5E1084;
+  --secondary: #6c757d;
+  --success: #1dc9b7;
+  --info: #5578eb;
+  --warning: #ffb822;
+  --danger: #fd397a;
+  --light: #e3eaef;
+  --dark: #6c757d;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: var(--font-family-monospace);
+}
+
+
+input:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+	box-shadow: 0 0 0 1px #2563EB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Repositon SM
+ */
+@media (min-width: 576px) {
+
+}
+
+/*
+ * Repositon MD
+ */
+@media (min-width: 768px) {
+	
+}
+
+/*
+ * Repositon LG
+ */
+@media (min-width: 992px) {
+	
+}
+
+/*
+ * Repositon XL
+ */
+@media (min-width: 1200px) {
+	
+}
+
+/*
+ * Repositon 2XL
+ */
+@media (min-width: 1440px) {
+	
+}
+
