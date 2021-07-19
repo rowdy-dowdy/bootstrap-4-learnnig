@@ -4,11 +4,584 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=!, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Document</title>
+	<link rel="stylesheet" href="boxicons-2.0.7/css/boxicons.min.css">
+	<title>Arvid</title>
 </head>
 <body>
 	<div id="app">
-		<input type="text" value="click">
+		<div id="main-wrapper">
+			<!-- HEADER -->
+			<header>
+				<div class="nav-header">
+					<a href="#" class="logo">
+						<h1>Arvid</h1>
+					</a>
+				</div>
+				<div class="header">
+					<button class="header__search">
+						<i class='bx bx-search'></i>
+					</button>
+					<div class="header__right space-x-4">
+						<div class="header-notified">
+							<i class='bx bx-bell' ></i><span class="badge">3</span>
+						</div>
+						<div class="header-user">
+							<!-- img avatar -->
+							<span class="avatar">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12,2C6.579,2,2,6.579,2,12s4.579,10,10,10s10-4.579,10-10S17.421,2,12,2z M12,7c1.727,0,3,1.272,3,3s-1.273,3-3,3 c-1.726,0-3-1.272-3-3S10.274,7,12,7z M6.894,16.772c0.897-1.32,2.393-2.2,4.106-2.2h2c1.714,0,3.209,0.88,4.106,2.2 C15.828,18.14,14.015,19,12,19S8.172,18.14,6.894,16.772z"></path></svg>
+							</span>
+
+							<strong>
+								Việt Hùng
+								<i class='bx bx-caret-down'></i>
+							</strong>
+						</div>
+
+						<!-- MENU TOGGLE -->
+						<div class="dropdown-profile">
+							<ul>
+								<li><a href="#">Profile</a></li>
+								<li><a href="#">Calender</a></li>
+								<li><a href="#">Inbox</a></li>
+								<li><a href="#">Lock Screen</a></li>
+								<li><a href="#">Logout</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- END-HEADER -->
+
+			<!-- SIDEBAR -->
+			<div class="sidebar">
+				<ul class="sidebar__menu">
+					<li><a href="#">
+						<i class='bx bx-tachometer'></i>
+						<span class="nav-text">Home</span>
+					</a></li>
+					<li><a href="#">
+						<i class='bx bxs-layer' ></i>
+						<span class="nav-text">Options</span>
+					</a></li>
+					<li><a href="#">
+						<i class='bx bxs-grid' ></i>
+						<span class="nav-text">App</span>
+					</a></li>
+					<li><a href="#">
+						<i class='bx bx-line-chart-down' ></i>
+						<span class="nav-text">Graphs</span>
+					</a></li>
+					<li><a href="#">
+						<i class='bx bxl-bootstrap' ></i>
+						<span class="nav-text">Bootstrap</span>
+					</a></li>
+					<li><a href="#">
+						<i class='bx bx-plug' ></i>
+						<span class="nav-text">Advanced</span>
+					</a></li>
+					<li><a href="#">
+						<i class='bx bxs-widget' ></i>
+						<span class="nav-text">Widget</span>
+					</a></li>
+					<li><a href="#">
+						<i class='bx bx-file' ></i>
+						<span class="nav-text">Forms</span>
+					</a></li>
+					<li><a href="#">
+						<i class='bx bx-table' ></i>
+						<span class="nav-text">Table</span>
+					</a></li>
+					<li><a href="#">
+						<i class='bx bx-table' ></i>
+						<span class="nav-text">Pages</span>
+					</a></li>
+				</ul>
+			</div>
+			<!-- END-SIDEBAR -->
+
+			<!-- CONTENT-BODY -->
+			<div class="content-body">
+				<div class="row space-x-4">
+					<div class="col-4 currencies">
+						<h2>Your Currencies</h2>
+						<p>The currencies you hvae purchased are here.</p>
+						<div class="currencies__icon space-x-3">
+							<span>
+								<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="btc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M310.204 242.638c27.73-14.18 45.377-39.39 41.28-81.3-5.358-57.351-52.458-76.573-114.85-81.929V0h-48.528v77.203c-12.605 0-25.525.315-38.444.63V0h-48.528v79.409c-17.842.539-38.622.276-97.37 0v51.678c38.314-.678 58.417-3.14 63.023 21.427v217.429c-2.925 19.492-18.524 16.685-53.255 16.071L3.765 443.68c88.481 0 97.37.315 97.37.315V512h48.528v-67.06c13.234.315 26.154.315 38.444.315V512h48.528v-68.005c81.299-4.412 135.647-24.894 142.895-101.467 5.671-61.446-23.32-88.862-69.326-99.89zM150.608 134.553c27.415 0 113.126-8.507 113.126 48.528 0 54.515-85.71 48.212-113.126 48.212v-96.74zm0 251.776V279.821c32.772 0 133.127-9.138 133.127 53.255-.001 60.186-100.355 53.253-133.127 53.253z" class=""/></svg>
+							</span>
+							<span>
+								<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="ethereum" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" class=""/></svg>
+							</span>
+							<span>
+								<svg enable-background="new 0 0 226.777 226.777" height="226.777px" id="Layer_1" version="1.1" viewBox="0 0 226.777 226.777" width="226.777px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M196.224,139.515c-7.59-4.162-15.848-6.09-23.981-6.026l0.069-0.039c-11.158,0.128-20.311-8.55-20.442-19.38  c-0.129-10.686,8.565-19.467,19.505-19.832v-0.005l-0.02-0.01c8.276-0.04,16.649-2.145,24.277-6.547  c22.81-13.165,30.309-41.787,16.749-63.93C198.818,1.602,169.334-5.677,146.524,7.488c-22.81,13.164-30.308,41.787-16.747,63.93  c5.648,9.227,2.526,21.152-6.978,26.638c-9.369,5.407-21.433,2.534-27.188-6.383l-0.005,0.002V91.7  c-4.147-6.951-10.189-12.956-17.913-17.192C54.59,61.836,25.276,69.744,12.223,92.175c-13.053,22.426-4.903,50.882,18.201,63.553  c23.105,12.672,52.415,4.763,65.469-17.667c0.079-0.135,0.149-0.275,0.226-0.411v0.033l0.005,0.002  c5.545-9.054,17.555-12.191,27.047-6.985c9.628,5.281,13.021,17.136,7.583,26.48c-13.055,22.431-4.904,50.885,18.199,63.555  c23.104,12.673,52.417,4.763,65.47-17.667C227.474,180.64,219.327,152.187,196.224,139.515z" id="XRP"/></svg>
+							</span>
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/><path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/></svg>
+							</span>
+						</div>
+					</div>
+					<div class="col-8 crpto-ticker">
+						<div class="ticker-container"></div>
+					</div>
+				</div>
+				<!-- END-ROW-ONE -->
+
+				<div class="row mt-8 space-x-4">
+					<div class="col-3">
+						<div class="card">
+							<div class="card__body">
+								<div class="row items-center space-x-3">
+									<div class="col-auto card__body__name">
+										<h4>Bitcoin</h4>
+										<h3>1.765 BTC</h3>
+									</div>
+									<div>
+										<span class="icon">
+											<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="btc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M310.204 242.638c27.73-14.18 45.377-39.39 41.28-81.3-5.358-57.351-52.458-76.573-114.85-81.929V0h-48.528v77.203c-12.605 0-25.525.315-38.444.63V0h-48.528v79.409c-17.842.539-38.622.276-97.37 0v51.678c38.314-.678 58.417-3.14 63.023 21.427v217.429c-2.925 19.492-18.524 16.685-53.255 16.071L3.765 443.68c88.481 0 97.37.315 97.37.315V512h48.528v-67.06c13.234.315 26.154.315 38.444.315V512h48.528v-68.005c81.299-4.412 135.647-24.894 142.895-101.467 5.671-61.446-23.32-88.862-69.326-99.89zM150.608 134.553c27.415 0 113.126-8.507 113.126 48.528 0 54.515-85.71 48.212-113.126 48.212v-96.74zm0 251.776V279.821c32.772 0 133.127-9.138 133.127 53.255-.001 60.186-100.355 53.253-133.127 53.253z" class=""/></svg>
+										</span>
+									</div>
+								</div>
+								<div class="row items-center">
+									<span class="col-auto badge text-success">
+										<i class='bx bxs-upvote' ></i>
+										<span>2.50 %</span>
+									</span>
+									<span class="col-auto">Since last month</span>
+								</div>
+								<div class="progress">
+									<div class="progress__bar" style="width: 60%;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<div class="card__body">
+								<div class="row items-center space-x-3">
+									<div class="col-auto card__body__name">
+										<h4>Ethereum</h4>
+										<h3>1.765 ETH</h3>
+									</div>
+									<div>
+										<span class="icon">
+											<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="ethereum" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" class=""/></svg>
+										</span>
+									</div>
+								</div>
+								<div class="row items-center">
+									<span class="col-auto badge text-danger">
+										<i class='bx bxs-downvote' ></i>
+										<span>2.50 %</span>
+									</span>
+									<span class="col-auto">Since last month</span>
+								</div>
+								<div class="progress">
+									<div class="progress__bar" style="width: 50%;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<div class="card__body">
+								<div class="row items-center space-x-3">
+									<div class="col-auto card__body__name">
+										<h4>Ripple</h4>
+										<h3>1.765 XRP</h3>
+									</div>
+									<div>
+										<span class="icon">
+											<svg enable-background="new 0 0 226.777 226.777" id="Layer_1" version="1.1" viewBox="0 0 226.777 226.777" width="226.777px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M196.224,139.515c-7.59-4.162-15.848-6.09-23.981-6.026l0.069-0.039c-11.158,0.128-20.311-8.55-20.442-19.38  c-0.129-10.686,8.565-19.467,19.505-19.832v-0.005l-0.02-0.01c8.276-0.04,16.649-2.145,24.277-6.547  c22.81-13.165,30.309-41.787,16.749-63.93C198.818,1.602,169.334-5.677,146.524,7.488c-22.81,13.164-30.308,41.787-16.747,63.93  c5.648,9.227,2.526,21.152-6.978,26.638c-9.369,5.407-21.433,2.534-27.188-6.383l-0.005,0.002V91.7  c-4.147-6.951-10.189-12.956-17.913-17.192C54.59,61.836,25.276,69.744,12.223,92.175c-13.053,22.426-4.903,50.882,18.201,63.553  c23.105,12.672,52.415,4.763,65.469-17.667c0.079-0.135,0.149-0.275,0.226-0.411v0.033l0.005,0.002  c5.545-9.054,17.555-12.191,27.047-6.985c9.628,5.281,13.021,17.136,7.583,26.48c-13.055,22.431-4.904,50.885,18.199,63.555  c23.104,12.673,52.417,4.763,65.47-17.667C227.474,180.64,219.327,152.187,196.224,139.515z" id="XRP"/></svg>
+										</span>
+									</div>
+								</div>
+								<div class="row items-center">
+									<span class="col-auto badge text-success">
+										<i class='bx bxs-upvote' ></i>
+										<span>2.50 %</span>
+									</span>
+									<span class="col-auto">Since last month</span>
+								</div>
+								<div class="progress">
+									<div class="progress__bar" style="width: 90%;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<div class="card__body">
+								<div class="row items-center space-x-3">
+									<div class="col-auto card__body__name">
+										<h4>Dash</h4>
+										<h3>1.765 BTC</h3>
+									</div>
+									<div>
+										<span class="icon">
+											<svg style="transform: scale(2);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/><path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/></svg>
+										</span>
+									</div>
+								</div>
+								<div class="row items-center">
+									<span class="col-auto badge text-danger">
+										<i class='bx bxs-downvote' ></i>
+										<span>2.50 %</span>
+									</span>
+									<span class="col-auto">Since last month</span>
+								</div>
+								<div class="progress">
+									<div class="progress__bar" style="width: 20%;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END-ROW-TWO -->
+
+				<div class="card mt-8">
+					<div class="card__header">
+						<h4>balance</h4>
+						<div class="card__header__action space-x-2">
+							<a href="#"><i class='bx bxs-downvote' ></i></a>
+							<a href="#"><i class='bx bx-cog'></i></a>
+							<a href="#"><i class='bx bx-refresh' ></i></a>
+							<a href="#"><i class='bx bx-fullscreen' ></i></a>
+							<a href="#"><i class='bx bx-x' ></i></a>
+						</div>
+					</div>
+					<div class="card__body">
+						<h3>9654150.00 USD</h3>
+						<div class="chart-wrapper"></div>
+					</div>
+				</div>
+				<!-- END-ROW-THREE -->
+
+				<div class="row mt-8 space-x-8">
+					<div class="col-6">
+						<div class="card">
+							<div class="card__header">
+								<h4>ico token</h4>
+								<div class="card__header__action space-x-2">
+									<a href="#"><i class='bx bx-refresh' ></i></a>
+									<a href="#"><i class='bx bx-cog'></i></a>
+								</div>
+							</div>
+							<div class="card__body">
+								<div class="chart-wrapper"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="card">
+							<div class="card__header">
+								<h4>ICO Distribution</h4>
+								<div class="card__header__action space-x-2">
+									<a href="#"><i class='bx bx-refresh' ></i></a>
+									<a href="#"><i class='bx bx-cog'></i></a>
+								</div>
+							</div>
+							<div class="card__body">
+								<div class="chart-wrapper"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END-ROW-FOUR -->
+
+				<div class="row mt-8 space-x-8">
+					<div class="col-6">
+						<div class="card">
+							<div class="card__header">
+								<h4>Buy Token</h4>
+							</div>
+							<div class="card__body">
+								<form method="POST">
+									<div class="row">
+										<input type="text" placeholder="ICO Token">
+									</div>
+									<div class="row space-x-2">
+										<div class="col-6">
+											<input type="text" placeholder="Amount">
+										</div>
+										<div class="col-6">
+											<select name="">
+												<option value="eth">ETH</option>
+												<option value="btc">BTC</option>
+												<option value="xrh">XRH</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<input type="text" placeholder="Walet Address">
+									</div>
+									<button type="submit">Buy Now</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="card">
+							<div class="card__header">
+								<h4>Walet Address</h4>
+							</div>
+							<div class="card__body">
+								<div class="walet">
+									<div class="row">
+										<span>
+											<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="btc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M310.204 242.638c27.73-14.18 45.377-39.39 41.28-81.3-5.358-57.351-52.458-76.573-114.85-81.929V0h-48.528v77.203c-12.605 0-25.525.315-38.444.63V0h-48.528v79.409c-17.842.539-38.622.276-97.37 0v51.678c38.314-.678 58.417-3.14 63.023 21.427v217.429c-2.925 19.492-18.524 16.685-53.255 16.071L3.765 443.68c88.481 0 97.37.315 97.37.315V512h48.528v-67.06c13.234.315 26.154.315 38.444.315V512h48.528v-68.005c81.299-4.412 135.647-24.894 142.895-101.467 5.671-61.446-23.32-88.862-69.326-99.89zM150.608 134.553c27.415 0 113.126-8.507 113.126 48.528 0 54.515-85.71 48.212-113.126 48.212v-96.74zm0 251.776V279.821c32.772 0 133.127-9.138 133.127 53.255-.001 60.186-100.355 53.253-133.127 53.253z" class=""/></svg>
+										</span>
+										<input type="text" placeholder="1FfmbHfnpaZjKFvyi1okTjJJusN455paPH">
+										<button>
+											<i class='bx bx-copy-alt' ></i>
+										</button>
+									</div>
+									<div class="row">
+										<span>
+											<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="ethereum" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" class=""/></svg>
+										</span>
+										<input type="text" placeholder="17hxeNzSThGXFpsNWQxgnkYSaxHMWiJXpL">
+										<button>
+											<i class='bx bx-copy-alt' ></i>
+										</button>
+									</div>
+									<div class="row">
+										<span>
+											<svg enable-background="new 0 0 226.777 226.777" id="Layer_1" version="1.1" viewBox="0 0 226.777 226.777" width="226.777px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M196.224,139.515c-7.59-4.162-15.848-6.09-23.981-6.026l0.069-0.039c-11.158,0.128-20.311-8.55-20.442-19.38  c-0.129-10.686,8.565-19.467,19.505-19.832v-0.005l-0.02-0.01c8.276-0.04,16.649-2.145,24.277-6.547  c22.81-13.165,30.309-41.787,16.749-63.93C198.818,1.602,169.334-5.677,146.524,7.488c-22.81,13.164-30.308,41.787-16.747,63.93  c5.648,9.227,2.526,21.152-6.978,26.638c-9.369,5.407-21.433,2.534-27.188-6.383l-0.005,0.002V91.7  c-4.147-6.951-10.189-12.956-17.913-17.192C54.59,61.836,25.276,69.744,12.223,92.175c-13.053,22.426-4.903,50.882,18.201,63.553  c23.105,12.672,52.415,4.763,65.469-17.667c0.079-0.135,0.149-0.275,0.226-0.411v0.033l0.005,0.002  c5.545-9.054,17.555-12.191,27.047-6.985c9.628,5.281,13.021,17.136,7.583,26.48c-13.055,22.431-4.904,50.885,18.199,63.555  c23.104,12.673,52.417,4.763,65.47-17.667C227.474,180.64,219.327,152.187,196.224,139.515z" id="XRP"/></svg>
+										</span>
+										<input type="text" placeholder="17hxeNzSThGXFpsNWQxgnkYSaxHMWiJXpL">
+										<button>
+											<i class='bx bx-copy-alt' ></i>
+										</button>
+									</div>
+									<div class="row">
+										<span>
+											<svg style="transform: scale(2);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/><path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/></svg>
+										</span>
+										<input type="text" placeholder="1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX">
+										<button>
+											<i class='bx bx-copy-alt' ></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END-ROW-FIVE -->
+
+				<div class="row mt-8 space-x-8">
+					<div class="col-6">
+						<div class="card">
+							<div class="card__header">
+								<h4>Transfer coins</h4>
+								<div class="card__header__action space-x-2">
+									<a href="#"><i class='bx bx-refresh' ></i></a>
+									<a href="#"><i class='bx bx-cog'></i></a>
+								</div>
+							</div>
+							<div class="card__body">
+								<form method="POST" class="transfer">
+									<div class="row">
+										<span>
+											<i class='bx bx-file' ></i>
+										</span>
+										<input type="text" placeholder="ICO Token">
+									</div>
+									<div class="row">
+										<span><i class='bx bx-money' ></i></span>
+										<input type="text" placeholder="ENter Amount" style="border-radius: none;">
+										<select name="transfer" id="">
+											<option value="btc">BTC</option>
+											<option value="etc">ETC</option>
+											<option value="xhr">XHR</option>
+										</select>
+									</div>
+									<div class="row">
+										<span><i class='bx bx-wallet' ></i></span>
+										<input type="text" placeholder="Mxs123PWid6YZX96">
+									</div>
+									<button type="submit">Send</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="card">
+							<div class="card__header">
+								<h4>Live My Crypto Prices</h4>
+								<div class="card__header__action space-x-2">
+									<a href="#"><i class='bx bx-refresh' ></i></a>
+									<a href="#"><i class='bx bx-cog'></i></a>
+								</div>
+							</div>
+							<div class="card__body">
+								<ul>
+									<li>
+										<strong>BTC</strong>
+										<span class="text-success">
+											<i class='bx bxs-upvote' ></i>
+											<span>$0.464413146</span>
+										</span>
+									</li>
+									<li>
+										<strong>ETH</strong>
+										<span class="text-danger">
+											<i class='bx bxs-downvote' ></i>
+											<span>$0.464413146</span>
+										</span>
+									</li>
+									<li>
+										<strong>XRP</strong>
+										<span class="text-success">
+											<i class='bx bxs-upvote' ></i>
+											<span>$0.464413146</span>
+										</span>
+									</li>
+									<li>
+										<strong>NEO</strong>
+										<span class="text-danger">
+											<i class='bx bxs-downvote' ></i>
+											<span>$0.464413146</span>
+										</span>
+									</li>
+									<li>
+										<strong>Dash</strong>
+										<span class="text-success">
+											<i class='bx bxs-upvote' ></i>
+											<span> $0.464413146</span>
+										</span>
+									</li>
+									<li>
+										<strong>NEO</strong>
+										<span class="text-danger">
+											<i class='bx bxs-downvote' ></i>
+											<span> $0.464413146</span>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END-ROW-SIX -->
+
+				<div class="row mt-8 space-x-8">
+					<div class="col-6">
+						<div class="card">
+							<div class="card__header">
+								<h4>Marketcap</h4>
+							</div>
+							<div class="card__body">
+								<table>
+									<tr>
+										<th>coins</th>
+										<th>prices</th>
+										<th>change %</th>
+									</tr>
+									<tr>
+										<td>BTC</td>
+										<td>$12,623.40</td>
+										<td>
+											<i class='bx bxs-upvote' ></i>
+											<span>+6.50%</span>
+										</td>
+									</tr>
+									<tr>
+										<td>ETH</td>
+										<td>$12,623.40</td>
+										<td>
+											<i class='bx bxs-upvote' ></i>
+											<span>+6.50%</span>
+										</td>
+									</tr>
+									<tr>
+										<td>LTC</td>
+										<td>$12,623.40</td>
+										<td>
+											<i class='bx bxs-upvote' ></i>
+											<span>+6.50%</span>
+										</td>
+									</tr>
+									<tr>
+										<td>XRP</td>
+										<td>$12,623.40</td>
+										<td>
+											<i class='bx bxs-upvote' ></i>
+											<span>+6.50%</span>
+										</td>
+									</tr>
+									<tr>
+										<td>DASH</td>
+										<td>$12,623.40</td>
+										<td>
+											<i class='bx bxs-upvote' ></i>
+											<span>+6.50%</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="card">
+							<div class="card__header">
+								<h4>Recent Transactions</h4>
+							</div>
+							<div class="card__body">
+								<table>
+									<tr>
+										<th>price</th>
+										<th>amount</th>
+										<th>when</th>
+									</tr>
+									<tr>
+										<td>0.00000000146464640</td>
+										<td>$12,623.40</td>
+										<td>21 min ago</td>
+									</tr>
+									<tr>
+										<td>0.00000000146464640</td>
+										<td>$12,623.40</td>
+										<td>21 min ago</td>
+									</tr>
+									<tr>
+										<td>0.00000000146464640</td>
+										<td>$12,623.40</td>
+										<td>21 min ago</td>
+									</tr>
+									<tr>
+										<td>0.00000000146464640</td>
+										<td>$12,623.40</td>
+										<td>21 min ago</td>
+									</tr>
+									<tr>
+										<td>0.00000000146464640</td>
+										<td>$12,623.40</td>
+										<td>21 min ago</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END-ROW-SEVEN -->
+			</div>
+			<!-- END-CONTENT-BODY -->
+
+			<!-- FOOTER -->
+			<div class="footer">
+				<div class="copyright">
+					<p>
+						Copyright © Designed & Developed by
+						<a href="#">Việt Hùng</a>
+						2021
+					</p>
+				</div>
+			</div>
+			<!-- END-FOOTER -->
+		</div>
 	</div>
+
+	<script src="index.js"></script>
 </body>
 </html>
