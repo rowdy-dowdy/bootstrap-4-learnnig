@@ -12,8 +12,11 @@
 		var links = document.querySelectorAll('a')
 
 		links.forEach( v => {
-			v.pathname = pathName.replace('/index.html', "") + v.pathname
+			pathName = pathName.replace('/index.html', "")
+			if (pathName[pathName.length] == '/')
+				pathName = pathName.slice(0,pathName.length)
+			v.pathname = pathName + v.pathname
 		})
 	</script>
 </body>
-</html>`
+</html>
