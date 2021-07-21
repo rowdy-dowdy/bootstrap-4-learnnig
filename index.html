@@ -11,9 +11,11 @@
 		var href = window.location.pathname;
 		var links = document.querySelectorAll('a')
 
+		console.log(href,links)
+
 		links.forEach( v => {
 			v.pathname = href.replace('index.html', "") + v.pathname
 		})
 	</script>
 </body>
-</html>
+</html>`
