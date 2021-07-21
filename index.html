@@ -8,13 +8,11 @@
 <body>
 	<a href="/arvid/index.html">Go to demo 1 no bootstrap</a>
 	<script>
-		var href = window.location.pathname;
+		var pathName = window.location.pathname;
 		var links = document.querySelectorAll('a')
 
-		console.log(href,links)
-
 		links.forEach( v => {
-			v.pathname = href.replace('index.html', "") + v.pathname
+			v.pathname = pathName.replace('/index.html', "") + v.pathname
 		})
 	</script>
 </body>
