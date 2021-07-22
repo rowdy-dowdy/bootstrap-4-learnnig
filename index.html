@@ -14,7 +14,7 @@
 		links.forEach( v => {
 			pathName = pathName.replace('/index.html', "")
 			if (pathName[pathName.length] == '/')
-				pathName = pathName.slice(0,pathName.length)
+				pathName = pathName.slice(0,pathName.length-1)
 			v.pathname = pathName + v.pathname
 		})
 	</script>

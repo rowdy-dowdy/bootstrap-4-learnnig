@@ -279,6 +279,7 @@ header {
   height: max-content;
   background: transparent;
   padding: 1rem;
+  padding-right: 0;
   border: none;
   color: inherit;
   font-size: 1.3rem;
@@ -296,7 +297,14 @@ header {
   border-radius: 5px;
   font-size: 1.5rem;
   background: rgba(0, 0, 0,0.5);
-  margin-right: 1rem;
+}
+
+.header__search > i {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
 }
 
 .header__search .dropdown-search {
@@ -352,10 +360,6 @@ header {
 
 .header__search.active .dropdown-search {
   display: block;
-}
-
-.header__search > i {
-  transform: translateY(10%);
 }
 
 .header__right {
@@ -609,6 +613,64 @@ header {
   margin-top: 1rem;
 }
 
+.content-body > .row--4 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-body > .row--4 > [class^='col']{
+  width: 100%;
+}
+
+.content-body > .row--5 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.row--5 .col {
+  width: 100%;
+}
+
+.row--5 .col .card .card__body {
+  overflow-x: auto;
+}
+
+.row--5 .card__body .walet {
+  width: max-content;
+  min-width: 100%;
+}
+
+.row--5 .card__body .walet .row {
+  width: max-content;
+  min-width: 100%;
+}
+
+.chart-wrapper {
+  max-width: 100%;
+  justify-content: center;
+}
+
+.row--4 .col:nth-child(1) .chart-wrapper {
+  height: 200px;
+}
+
+.chart-wrapper .col-6:nth-child(1) {
+  max-width: 250px;
+  width: 80%;
+  margin: auto;
+}
+.chart-wrapper .col-6:nth-child(2) {
+  max-width: 100%;
+  width: 100%;
+}
+
+.row--4 .chart-wrapper {
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .currencies {
   display: flex;
   flex-direction: column;
@@ -734,7 +796,7 @@ header {
 /*CARD*/
 .card {
   background: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
+  padding: 1rem 2rem;
   height: 100%;
   border-radius: 5px;
 }
@@ -806,6 +868,10 @@ header {
   padding-bottom: .5rem;
 }
 
+.card__header > h4 {
+  white-space: nowrap;
+}
+
 .card__header__action {
   display: grid;
   margin-left: 1rem;
@@ -830,7 +896,6 @@ header {
 }
 
 .chart-wrapper__progress {
-  margin-left: 15%;
   display: flex;
   flex-direction: column;
   font-size: .85rem;
@@ -904,6 +969,7 @@ header {
 }
 
 .walet .row input {
+  width: 0;
   flex-grow: 1;
   background: rgba(0,0,0,0.4);
   padding: 1rem;
@@ -977,6 +1043,7 @@ header {
 .card__body table td {
   padding: .5rem 0;
   border-bottom: 1px solid rgba(0,0,0,0.15);
+  white-space: nowrap;
 }
 
 .card__body table th{
@@ -986,6 +1053,11 @@ header {
   text-transform: uppercase;
   padding-bottom: .5rem;
   border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.card__body table td:not(:first-of-type),
+.card__body table th:not(:first-of-type) {
+  padding-left: 1rem;
 }
 
 /*FOOTER*/
@@ -1027,6 +1099,30 @@ header {
   .header-user {
     margin-left: 1.5rem;
   }
+
+  .grid--1 {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .chart-wrapper {
+    justify-content: space-between;
+  }
+
+
+  .chart-wrapper .col-6:nth-child(1) {
+    max-width: 250px;
+    width: calc(50% - 2rem);
+    margin: initial;
+  }
+  .chart-wrapper .col-6:nth-child(2) {
+    max-width: 300px;
+    width: calc(50% - 2rem);
+  }
+
+  .row--4 .chart-wrapper {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 
 /*
@@ -1051,6 +1147,19 @@ header {
   .card {
     padding: 2rem;
   }
+
+  .chart-wrapper {
+    justify-content: space-around;
+  }
+
+  .content-body > .row--5 {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .row--5 .col {
+    width: calc(50% - 1rem);
+  }
 }
 
 /*
@@ -1073,6 +1182,25 @@ header {
 
   .sidebar__menu {
     height: max-content;
+  }
+
+  .content-body {
+    background: rgba(0, 0, 0,0.5);
+  }
+
+  .content-body > .row--4 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content-body > .row--4 > [class^='col']{
+    width: calc(50% - 1rem);
+    /*flex: none;*/
+  }
+
+
+  .row--4 .col:nth-child(1) .chart-wrapper {
+    height: 300px;
   }
 }
 
@@ -1220,7 +1348,6 @@ header {
   /*CONTENT-BODY*/
   .content-body {
     padding: 2rem 2.5rem 1rem 2.5rem;
-    background: rgba(0, 0, 0,0.5);
   }
 
   .content-body > .row--1 {
@@ -1233,6 +1360,10 @@ header {
 
   .content-body > .row--1 > :nth-child(2) {
     width: calc(8 / 12 * 100%);;
+  }
+
+  .grid--1 {
+    grid-template-columns: repeat(4,1fr);
   }
 }
 

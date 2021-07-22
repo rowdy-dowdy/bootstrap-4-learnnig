@@ -38,13 +38,14 @@ headerDropdown.nextElementSibling.addEventListener('click', function(e) {
 
 // HEADER SEARCH
 let headerSerach = document.querySelector('.header__search')
+let buttonSerach = document.querySelector('.header__search .bx-search')
 
-headerSerach.addEventListener('click', function(e) {
+buttonSerach.addEventListener('click', function(e) {
 	e.preventDefault()
 	e.stopPropagation()
 
 	resetAllElementActive(this)
-	this.classList.toggle('active')
+	headerSerach.classList.toggle('active')
 })
 
 headerSerach.lastElementChild.addEventListener('click', function(e) {
@@ -257,7 +258,7 @@ function toogleHeight(el,h) {
   if(delayToggle) return;
 
   if (el.getAttribute('aria-expanded') == 'false' 
-    || el.getAttribute('aria-expanded') === undefined) {
+    || el.getAttribute('aria-expanded') == undefined) {
     el.style.height = `${h}px`
     el.setAttribute('aria-expanded',true)
     el.offsetParent.classList.add('child-collapse')
@@ -289,16 +290,19 @@ var bindToogle = []
 
 function addToggleDropdowns() {
   checkEventToogle = true
+  sidebar.classList.add('show')
 
   for(let i = 1; i < dropdowns.length; i++) {
-    let h = dropdowns[i].scrollHeight
     let el = dropdowns[i]
+    let h = el.scrollHeight
 
-    // console.log(el)
+    // console.log(elClone)
 
     bindToogle[i-1] = toogleHeight.bind(event,el,h)
     dropdowns[i].parentNode.addEventListener('click', bindToogle[i-1])
   }
+
+  sidebar.classList.remove('show')
 }
 
 function removeToggleDropdowns() {
@@ -339,11 +343,10 @@ function dropdownMobile() {
 function dropdownScreenXL() {
   if (widthPage >= responsive['xl']) {
     for(let i = 1; i < dropdowns.length; i++) {
-      console.log(dropdowns[i])
       let el = dropdowns[i]
 
       if (el.getAttribute('aria-expanded') == 'false' 
-        || el.getAttribute('aria-expanded') === undefined) {
+        || el.getAttribute('aria-expanded') == undefined) {
         el.style.height = `initial`
         el.setAttribute('aria-expanded',true)
       }
@@ -352,8 +355,7 @@ function dropdownScreenXL() {
     for(let i = 1; i < dropdowns.length; i++) {
       let el = dropdowns[i]
 
-      if (el.getAttribute('aria-expanded') == 'true' 
-        || el.getAttribute('aria-expanded') === undefined) {
+      if (el.getAttribute('aria-expanded') == 'true') {
         el.style.height = `0px`
         el.setAttribute('aria-expanded',false)
       }
