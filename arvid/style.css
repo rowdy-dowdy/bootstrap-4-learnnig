@@ -629,6 +629,10 @@ header {
   gap: 2rem;
 }
 
+.row--5 .col .card .card__body .row {
+  padding: 1px;
+}
+
 .row--5 .col {
   width: 100%;
 }
@@ -1361,6 +1365,10 @@ header {
   .content-body > .row--1 > :nth-child(2) {
     width: calc(8 / 12 * 100%);;
   }
+
+  .content-body > .row--1 > :not(:first-of-type) {
+    margin-top: 0;
+}
 
   .grid--1 {
     grid-template-columns: repeat(4,1fr);

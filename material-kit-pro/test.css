@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --indigo-light:  #6163ff;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+hr {
+	background: #2c3e50;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #151719;
+}
+
+header .navbar-nav .nav-item {
+	padding-right: 3.5rem;
+}
+
+header .navbar-nav .nav-item a {
+	font-size: 1.05rem;
+	font-weight: 500;
+	color: #95a5a6;
+}
+
+header .navbar-nav .nav-item button {
+	background: var(--indigo-light);
+	border-color: var(--indigo-light);
+	color: white;
+	padding: .375rem 1.7rem;
+	border: none;
+	border-radius: 2px;
+}
+
+header .mid h1 {
+	font-weight: 900;
+}
+
+header .mid h1 span {
+	color: var(--indigo-light);
+}
+
+header .mid p {
+	width: 60%;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+header .mid .row button {
+	background: var(--indigo-light);
+	padding: .7rem 2rem;
+	font-weight: 700;
+	border:  none;
+	border-radius: 2px;
+	margin: 0 .6rem;
+}
+
+header .mid .row button:nth-child(2) {
+	background: #25282c;
+}
+
+
+.features .row [class^='col'] img {
+	background: var(--indigo-light);
+}
+
+.about h1,
+.feedback h1 {
+	font-size: 3rem;
+}
+
+.about p,
+.feedback p {
+	font-size: 1.3rem;
+	word-spacing: 0.01rem;
+}
+
+.about .row .content h6 {
+	color: var(--indigo-light);
+	font-size: .9rem;
+	font-weight: 600;
+}
+
+.about .row .content p {
+	font-size: 1.2rem;
+}
+
+.feedback .card {
+	background: #25282c;
+	border: none;
+}
+
+.feedback .card-body i{
+	color: var(--indigo-light);
+	font-size: 2rem;
+}
+
+.feedback .card-body p{
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+.feedback .card-body hr{
+	background: #2c3e50;
+}
+
+.feedback .card-body h4{
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+
+.feedback .card-body h4 span{
+	color: var(--green);
+}
+
+.sub {
+	background: var(--indigo-light);
+}
+
+footer span {
+	color: var(--indigo-light);
+}
+
+html {
+  font-size: .7rem;
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: .85rem;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 1rem;
+  }
+}
