@@ -23,11 +23,30 @@
 <body class="min-h-screen p-8 bg-blue-100">
 	<div class="grid gap-8 w-full justify-center" 
 		style="grid-template-columns: repeat(auto-fit, minmax(300px,500px));">
-		<a href="/arvid/index.html" class="shadow-lg rounded-md">
+		<!-- item 1 -->
+		<a href="arvid/index.html" class="shadow-lg rounded-md">
 			<div class="grid__child relative h-0 rounded-md overflow-hidden" style="padding-top: 60%;">
 				<div class="template absolute w-full h-full rounded-md top-0 left-0
 				  bg-cover overflow-hidden"
 					style="background-image: url('arvid/imgs/Screenshot 2021-07-22 at 14-04-05 Arvid.png')">
+				</div>
+				<div class="absolute w-full left-0 bottom-0 px-6 
+					text-gray-50 font-mono text-left h-0 transition-all duration-500 ease-in-out" 
+					style="box-shadow: 0 -10px 70px 90px rgba(0, 0, 0, 0.7);">
+					<h2 class="absolute left-0 bottom-4 px-6 font-black font-sans"
+						style="font-size: min(vw,1.25rem);" 
+					>Arvid - Bootstrap Cryptocurrency Admin Dashboard Template Preview - ThemeForest</h2>
+				</div>
+			</div>
+		</a>
+		<!-- end item 1 -->
+
+		<!-- item 2 -->
+		<a href="material-kit-pro/test.html" class="shadow-lg rounded-md">
+			<div class="grid__child relative h-0 rounded-md overflow-hidden" style="padding-top: 60%;">
+				<div class="template absolute w-full h-full rounded-md top-0 left-0
+				  bg-cover overflow-hidden"
+					style="background-image: url('material-kit-pro/images/Screenshot 2021-07-24 at 14-42-00 Learning bootstrap 4.png')">
 				</div>
 				<div class="absolute w-full right-0 top-4 px-4 
 					text-gray-300 font-mono text-right h-0 transition-all duration-500 ease-in-out" >
@@ -38,24 +57,13 @@
 				<div class="absolute w-full left-0 bottom-0 px-6 
 					text-gray-50 font-mono text-left h-0 transition-all duration-500 ease-in-out" 
 					style="box-shadow: 0 -10px 70px 90px rgba(0, 0, 0, 0.7);">
-					<h2 class="font-black font-sans"
-						style="transform: translateY(-150%); font-size: min(4vw,1.25rem);" 
-					>Arvid - Bootstrap Cryptocurrency Admin Dashboard Template Preview - ThemeForest</h2>
+					<h2 class="absolute left-0 bottom-4 px-6 font-black font-sans"
+						style="font-size: min(5vw,1.25rem);" 
+					>Landing template for <span style="color: #6163ff">startups</span></h2>
 				</div>
 			</div>
 		</a>
+		<!-- end item 2 -->
 	</div>
-
-	<script>
-		var pathName = window.location.pathname;
-		var links = document.querySelectorAll('a')
-
-		links.forEach( v => {
-			pathName = pathName.replace('/index.html', "")
-			if (pathName[pathName.length-1] == '/')
-				pathName = pathName.slice(0,pathName.length-1)
-			v.pathname = pathName + v.pathname
-		})
-	</script>
 </body>
 </html>
